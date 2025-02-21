@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-web-app
+  template:
+    spec:
+      containers:
+        - image: image-name-placeholder
+          name: demo-web-app
